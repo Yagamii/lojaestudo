@@ -1,0 +1,279 @@
+/*
+	Author	:	Christopher Robinson
+	Email		:	christopher@edg3.co.uk
+	Website	:	http://www.edg3.co.uk/
+*/
+
+* {
+	border:1;
+	margin:0;
+	padding:0;
+}
+
+/* general */
+a {
+	color:#777;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+/* body */
+body {
+	background:#fafafa;
+	color:#555;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+/* header */
+#header {
+	border-bottom:1px solid #999;
+	height:80px;
+	margin:0 auto;
+	width:751px;
+}
+#header h1 {
+	color:#888;
+	font-size:300%;
+	letter-spacing:-3px;
+	text-align:left;
+	padding:5px;
+	margin-bottom:-20px;
+}
+#header h2 {
+	color:#CCC;
+	padding: 5px;
+	padding-left: 14px;
+	font-size:200%;
+	letter-spacing:-2px;
+	text-align:left;
+}
+
+/* navigation */
+#navigation {
+	background:#fafafa;
+	border-right:1px solid #999;
+	margin:0 auto;
+	width:750px;
+	height:40px;
+	list-style:none;
+}
+#navigation li {
+	border-left:1px solid #999;
+	float:left;
+	width:149px;
+	list-style:none;
+}
+#navigation a {
+	color:#555;
+	display:block;
+	line-height:30px;
+	text-align:center;
+}
+#navigation a:hover {
+	background:#e3e3e3;
+	color:#555;
+}
+#navigation .active {
+	background:#e3e3e3;
+	color:#777;
+}
+
+/* content */
+#content {
+	height:auto;
+	margin:0 auto;
+	padding:0 0 20px;
+	width:751px;
+}
+#content h1 {
+	border-bottom:1px dashed #999;
+	font-size:1.8em;
+	padding:8px 0 2px;
+	margin-bottom: 3px;
+}
+#content p {
+	padding:20px 20px 0;
+}
+
+.corponot{
+	padding-bottom: 8px;
+	text-align: justify;
+}
+
+.produto-curto{
+	width: 32%;
+	height: 350px;
+	float: left;
+	border: 2px solid #FFC971;
+	margin-left: 4px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 2px 2px;
+	position: relative;
+	background-color:#E9E9E9;
+}
+
+.produto-curto img{
+	padding-top: 10px;
+	position: relative;
+	
+}
+
+.desc-produto{
+	position: absolute;
+}
+
+.valor{
+	color:#00BC15;
+	position: absolute;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	float: left;
+	bottom: 0;
+}
+
+.ver-produto{
+	background-color:#FF5D5D;
+	border: 1px solid black;
+	border-radius: 7px 7px 7px 7px;
+	padding: 3px 15px 3px 15px;
+	color: white;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.lermais{
+	width: 98%;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	border-bottom:1px solid #999;
+	display:table;
+	clear: both;
+	
+}
+
+.lermais div{
+	border: 1px double; 
+	float: right; 
+	padding: 2px; 
+	margin-right: 4px;
+}
+
+.cats{
+	font-size:16px;
+	
+}
+
+.sucess{
+	font-weight: bold;
+	color: #3C0;
+	text-align: center;
+}
+
+.error {
+	font-weight: bold;
+	color: #C00
+}
+
+td{
+	text-align:center;
+}
+
+#cadastro td{
+	text-align: right;
+}
+
+#equipe{
+	border-bottom: 1px solid; 
+	padding-bottom: 15px;
+}
+
+#equipe img{
+	width: 170px;
+	height: 150px;
+	border: 1;
+	float: left;
+	padding-right: 10px;
+	padding-top: 8px;
+}
+
+.comentarios{
+	border-bottom: 1px solid; 
+	padding-bottom: 15px ; 
+	margin-bottom: 10px;
+}
+
+.comentarios div{
+	border-bottom: 1px dashed;  
+	border-bottom-color: #C63;
+}
+
+.comentarios div div{
+	border: 0;
+}
+
+.avaliar{
+	border-bottom: 1px dashed; 
+	padding-bottom: 5px;
+}
+
+/* footer */
+#footer {
+	border-top:2px solid #999; 
+	height:50px;
+	margin:0 auto;
+	padding:10px;
+	text-align:center;
+	width:751px;
+	clear: both;
+}
+
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+	width:149px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 149px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: e3e3e3;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
