@@ -12,6 +12,14 @@
 			$Connect = new Connect;
 			$this->Dbc = $Connect->connectToDb();
 		}
+		
+		//Função utilizada para verificar se o campo inserido é valido para ser passado ao mysql
+		public function veriCampo($dado){
+			
+			$_dado = mysqli_real_escape_string($this->Dbc->getConnection, $dado);
+			
+			return $_dado;
+		}
 	}
 
 ?>
