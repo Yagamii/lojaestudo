@@ -28,6 +28,7 @@
 										echo '<a href="painel/index.php?page=usuario">Admin</a>';
 									}
 									echo '
+									<a href="index.php?page=carrinho&id='.$_SESSION['usuario_id'].'">Carrinho</a>
 									<a href="index.php?page=usuario&id='.$_SESSION['usuario_id'].'">Editar dados</a>
 									<a href="index.php?page=login&action=logout">Logout</a>
 								</div>
