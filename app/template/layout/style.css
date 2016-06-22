@@ -119,9 +119,9 @@ body {
 }
 
 .produto-curto img{
-	padding-top: 10px;
+	margin-top: 10px;
 	position: relative;
-	
+	border: 1px solid black;
 }
 
 .desc-produto{
@@ -151,29 +151,32 @@ body {
 	margin-bottom: 5px;
 }
 
-.lermais{
-	width: 98%;
-	margin-top: 4px;
-	margin-bottom: 10px;
-	padding-top: 1px;
-	padding-bottom: 5px;
-	padding-right: 15px;
-	border-bottom:1px solid #999;
-	display:table;
-	clear: both;
-	
+.login-form {
+	margin: 10px auto;
+	width: 350px;
+	height: 115px;
+	border: 1.5px solid brown;
+	text-align: center;
+	border-radius: 40px 40px 40px 40px;
+	box-shadow: 4px 4px 5px;
+	background-color: #E0E0E0;
 }
 
-.lermais div{
-	border: 1px double; 
-	float: right; 
-	padding: 2px; 
-	margin-right: 4px;
+.login-form p{
+	margin-top: -4px;
 }
 
-.cats{
-	font-size:16px;
-	
+.botao-enviar{
+	margin-top: -4px;
+	padding: 3px;
+	border: 1px solid grey;
+	border-radius: 3px 3px 3px 3px;
+	background-color: grey;
+}
+
+.botao-enviar:hover{
+	background-color:transparent;
+	box-shadow: 1px 1px 5px;
 }
 
 .sucess{
@@ -239,9 +242,6 @@ td{
 	width:751px;
 	clear: both;
 }
-
-
-
 
 /* Style The Dropdown Button */
 .dropbtn {
