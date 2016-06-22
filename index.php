@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	/*
 		Site de loja genérico feito para testes
 		utilizando metodo "meio mvc" para organização de pastas
@@ -21,7 +21,7 @@
 	//Chamada de classe estatica para melhor tratamento de mensagens de erro e sucesso
 	require_once('app/src/MsgHandler.php');
 	
-	//session_start();
+	session_start();
 	
 	//Chamada de arquivo de classe do fuseaction(pagina) que foi definido
 	require_once("app/src/".ucfirst(Fuseaction)."/".strtolower(Fuseaction).".php");
