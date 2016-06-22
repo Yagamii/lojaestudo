@@ -179,6 +179,39 @@ body {
 	box-shadow: 1px 1px 5px;
 }
 
+.form-cadastro{
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.form-label{
+	width: 40%;
+	float: left;
+	text-align: right;
+}
+
+.form-label span{
+	font-size: 18px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+.form-input{
+	width: 59%;
+	float: right;
+	text-align: left;
+}
+
+.form-input input{
+	margin-top: 5px;
+}
+
+.botao-cadastro{
+	padding-top: 7px;
+	width: 100%;
+	clear: both;
+}
+
 .sucess{
 	font-weight: bold;
 	color: #3C0;
