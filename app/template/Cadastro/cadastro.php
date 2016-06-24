@@ -12,12 +12,12 @@
         </div>
         
         <div class="form-input">
-        	<input type="text" name="nome" /><br/>
-            <input type="text" name="sobrenome" /><br/>
-            <input type="text" name="usuario" /><br/>
-            <input type="text" name="email" /><br/>
-            <input type="password" name="pass" /><br/>
-            <input type="password" name="cpass" />
+        	<input type="text" name="nome" value="<?php if(isset($_POST['nome'])) echo $_POST['nome']; ?>"/><br/>
+            <input type="text" name="sobrenome" value="<?php if(isset($_POST['sobrenome'])) echo $_POST['sobrenome']; ?>"/><br/>
+            <input type="text" name="usuario" value="<?php if(isset($_POST['usuario'])) echo $_POST['usuario']; ?>"/><br/>
+            <input type="text" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>"/><br/>
+            <input type="password" name="senha" /><br/>
+            <input type="password" name="csenha" />
         </div>
         
         <div class="botao-cadastro">
