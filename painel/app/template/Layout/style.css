@@ -1,0 +1,171 @@
+/* Geral */
+* {
+	border:1;
+	margin:0;
+	padding:0;
+}
+
+a {
+	color:#777;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+h1{
+	padding-top: 15px;
+	color: black;
+}
+
+body {
+	background:#fafafa;
+	color:#555;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+.sucess{
+	font-weight: bold;
+	color: #3C0;
+	text-align: center;
+}
+
+.error {
+	font-weight: bold;
+	color: #C00
+}
+
+/* Tela de Login */
+
+.login-form{
+	margin: 180px auto;
+	width: 400px;
+	height: 230px;
+	background-color: #3855D9;
+	border-radius: 5px 5px 5px 5px;
+	text-align: center;
+	border: 1px solid black;
+	
+}
+
+.login-label{
+	margin-top: 40px;
+	width: 35%;
+	text-align: right;
+	float: left;
+}
+
+.login-label ul li{
+	list-style: none;
+	color: black;
+	margin-top: 5px;
+	padding-right: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+.login-input{
+	margin-left: 5px;
+	margin-top: 43px;
+	text-align: left;
+	width: 54%;
+	float: left;
+}
+
+.login-input input{
+	margin-top: 5px;
+}
+
+.login-submit{
+	padding: 25px;
+	clear: both;
+}
+
+.login-submit input{
+	padding: 7px;
+	font-weight: bold;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.login-submit input:hover{
+	background-color: #5A5A5A;
+	border-color: #5A5A5A;
+}
+
+/* Header */
+
+.header-logo{
+	width: 235px;
+	height: 60px;
+	background-color: #1F1F1F;
+	position: absolute;
+	border-right: 1px solid white;
+}
+
+.header-logo p{
+	color: white;
+	margin-left: 10px;
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.header-logo span{
+	color: orange;
+	margin-left: 150px;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #111111;
+}
+
+.header ul li{
+	list-style: none;
+	float: right;
+	padding-top: 17px;
+	padding-right: 50px;
+	font-size: 20px;
+}
+
+.header ul li a{
+	border-left: 1px solid white;
+	padding-left: 20px;
+	padding-top: 18px;
+	padding-right: 20px;
+	padding-bottom: 21px;
+	margin-right: -50px;
+}
+
+.header ul li a:hover{
+	background-color: #8E5722;
+}
+
+/* Side bar */
+
+.sidebar{
+	border-top: 1px solid grey;
+	width:235px;
+	height: 607px;
+	background-color: #111111;
+	position: fixed;
+	left: 0;
+	text-align: center;
+}
+
+.sidebar ul li{
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 18px;
+	list-style: none;
+	border-bottom: 3px dashed white;
+}
+
+.sidebar ul li:hover{
+	background-color: #8E5722;
+}
