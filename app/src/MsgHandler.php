@@ -21,6 +21,13 @@
 		public static function setSucess($sucesso){
 			self::$sucess[] = $sucesso;
 		}
+		
+		public static function verificarUsuario($logado){
+			if(!$logado){
+				header("Location: index.php?page=login&action=deslogado");
+				exit;
+			}
+		}
 	}
 
 ?>
