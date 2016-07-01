@@ -21,15 +21,15 @@
 			<li><a href="index.php?page=promocoes">Promoções</a></li>
             <li><a href="index.php?page=categorias">Categorias</a></li>
 			<li><a href="index.php?page=cadastro">Cadastro</a></li>
-			<li><?php if(isset($_SESSION['usuario_id'])){
+			<li><?php if(isset($_SESSION['id_usuario'])){
             			echo '<div class="dropdown"><a href="#"><div class="dropbtn">'.$_SESSION['usuario'].'</div></a>
 								<div class="dropdown-content">';
-									if($_SESSION['nivel_usuario'] == 2){
-										echo '<a href="painel/index.php?page=usuario">Admin</a>';
+									if($_SESSION['id_nivel'] == 3){
+										echo '<a href="painel/index.php?page=home">Admin</a>';
 									}
 									echo '
-									<a href="index.php?page=carrinho&id='.$_SESSION['usuario_id'].'">Carrinho</a>
-									<a href="index.php?page=usuario&id='.$_SESSION['usuario_id'].'">Editar dados</a>
+									<a href="index.php?page=carrinho&id='.$_SESSION['id_usuario'].'">Carrinho</a>
+									<a href="index.php?page=usuario&id='.$_SESSION['id_usuario'].'">Editar dados</a>
 									<a href="index.php?page=login&action=logout">Logout</a>
 								</div>
 								</div>';

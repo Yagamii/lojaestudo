@@ -1,7 +1,7 @@
 <?php
 	/*
 		Site de loja genérico feito para testes
-		utilizando metodo "meio mvc" para organização de pastas
+		utilizando metodo "meio mvc" para organização de pastas e arquivos
 	*/
 	
 	//chamada de arquivo de conexão de banco de dados e classe padrão
