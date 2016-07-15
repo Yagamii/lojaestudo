@@ -24,7 +24,7 @@
 					throw new Exception("Já existe um usuario cadastrado com esse email.");
 				
 				//Com tudo verificado corretamente, inserir dados no banco
-				$q = "INSERT INTO usuarios(nome, sobrenome, usuario, email, pass, data_registro) VALUES ('$_nome', '$_snome', '$_usuario', '$_email', '$_senha', NOW())";
+				$q = "INSERT INTO usuarios(nome, sobrenome, usuario, email, pass, data_registro, id_nivel) VALUES ('$_nome', '$_snome', '$_usuario', '$_email', '$_senha', NOW(), '1')";
 				$r = $this->Dbc->query($q);
 				
 				if(mysqli_affected_rows($this->Dbc->getConnection()))
