@@ -10,9 +10,11 @@
 
 <?php if(isset($_SESSION['id_usuario'])){ ?>
 
+<a href="index.php?page=home">
 <div class="header-logo">
 	<p>Megatron</p><span>PAINEL</span>
 </div>
+</a>
 <div class="header">
 	<ul>
     	<li><a href="index.php?page=login&action=logout">Logout</a></li>
@@ -22,12 +24,11 @@
 
 <div class="sidebar">
 	<ul>
-    	<li><a href="index.php?page=usuario">Usuario</a></li>
-        <li><a href="index.php?page=categoria">Categoria</a></li>
-        <li><a href="index.php?page=produto">Produto</a></li>
+    	<li><a href="index.php?page=usuarios">Usuarios</a></li>
+        <li><a href="index.php?page=categorias">Categorias</a></li>
+        <li><a href="index.php?page=produtos">Produtos</a></li>
     </ul>
 </div>
-
 <?php 
 				if(MsgHandler::getError()){
 					foreach(MsgHandler::getError() as $erro){
