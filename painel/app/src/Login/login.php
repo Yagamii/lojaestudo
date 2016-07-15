@@ -35,6 +35,7 @@
 				//Define informações do usuario na sessão
 				$_SESSION['id_usuario'] = $row['id_usuario'];
 				$_SESSION['usuario'] = $row['usuario'];
+				$_SESSION['id_nivel'] = $row['id_nivel'];
 				
 				//Move o usuario logado para pagina inicial do painel
 				header("Location: index.php?page=home");

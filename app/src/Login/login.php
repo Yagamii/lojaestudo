@@ -5,7 +5,6 @@
 	*/
 	class Login extends Padrao{
 		
-		
 		function logar($user, $pass){
 			try{
 				//A função primeiro trata ambos dados inseridos, verificando texto com o escape_string para verificar se o mysql vai aceitar o dado
