@@ -44,6 +44,10 @@
 		//Função para adicionar diretamente um usuário como administrador, feito cadastro direto do painel
 		function addAdmin($nome, $sobrenome, $usuario, $email, $senha){
 			try{
+				//Verifica se algum campo esta vazio
+				if(empty($nome) || empty($sobrenome) || empty($usuario) || empty($email) || empty($senha))
+					throw new Exception("Por favor, preencha todos os dados corretamente");
+				
 				//Dados tratados pela função de verificarCampo, tratando dados inseridos e os modificando de modo que sejam aceitos pelo sql
 				$_nome = $this->verificarCampo($nome);
 				$_sobrenome = $this->verificarCampo($sobrenome);
