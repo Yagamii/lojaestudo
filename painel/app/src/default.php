@@ -22,7 +22,7 @@
 				if(in_array($imagem, $permitido)){					
 					
 					//Tenta mover o arquivo de nome temporario para seu diretorio
-					if(move_uploaded_file($tpmname, "../app/template/includes/uploads/thumb/".$name."")){
+					if(move_uploaded_file($tpmname, "../app/template/Includes/thumb/".$name."")){
 						
 						//Caso bem sucessido, retorna para variavel que chamar a função o nome do arquivo que foi upado
 						return $name;

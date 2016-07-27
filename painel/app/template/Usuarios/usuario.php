@@ -33,8 +33,8 @@
                 <td><?php echo $row['email'];?></td>
                 <td><?php echo $row['data'];?></td>
                 <td><?php echo $row['nivel']; ?></td>
-                <td><a href="index.php?page=usuarios&action=editar&id=<?php echo $row['id_usuario']; ?>" title="Editar <?php echo $row['usuario'];?>"><img src="app/template/Includes/Editing-Edit-icon.png" width="18" height="18"/></a></td>
-                <td><a href="index.php?page=usuarios&action=apagar&id=<?php echo $row['id_usuario']; ?>" title="Apagar <?php echo $row['usuario'];?>"><img src="app/template/Includes/apagar-icon.png" width="18" height="18"/></a></td>
+                <td><a href="index.php?page=usuarios&action=editar&id=<?php echo $row['id_usuario']; ?>" title="Editar <?php echo $row['usuario'];?>"><img src="app/template/Includes/icone-editar.png" width="18" height="18"/></a></td>
+                <td><a href="index.php?page=usuarios&action=apagar&id=<?php echo $row['id_usuario']; ?>" title="Apagar <?php echo $row['usuario'];?>"><img src="app/template/Includes/icone-apagar.png" width="18" height="18"/></a></td>
             </tr>
         <?php endwhile; ?>
         </table>

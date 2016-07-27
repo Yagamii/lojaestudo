@@ -25,10 +25,10 @@
 						<?php echo $row['categoria'];?>
 					</td>
 					<td>
-						<a href="index.php?page=categorias&action=editar&id=<?php echo $row['id_categoria'];?>"><img src="app/template/Includes/Editing-Edit-icon.png" width="18" height="18" /></a>
+						<a href="index.php?page=categorias&action=editar&id=<?php echo $row['id_categoria'];?>"><img src="app/template/Includes/icone-editar.png" width="18" height="18" /></a>
 					</td>
 					<td>
-						<a href="index.php?page=categorias&action=apagar&id=<?php echo $row['id_categoria'];?>"><img src="app/template/Includes/apagar-icon.png" width="18" height="18"/></a>
+						<a href="index.php?page=categorias&action=apagar&id=<?php echo $row['id_categoria'];?>"><img src="app/template/Includes/icone-apagar.png" width="18" height="18"/></a>
 					</td>
 				</tr>
 			<?php endwhile; ?>
