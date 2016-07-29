@@ -25,7 +25,7 @@
 			return $count[0];
 		}
 		//Adiciona um novo produto ao banco de dados, recebendo como parametro todas informações necessarias sobre o produto
-		function addProduto($nome, $descricao, $categoria, $valor, $quantidade, $thumb){
+		function addProduto($nome, $descricao, $categoria, $valor, $quantidade){
 			try{
 				//Verifica se algum campo esta vazio, caso algum esteja, apresenta mensagem
 				if(empty($nome) || empty($descricao) || empty($valor) || empty($quantidade))
@@ -61,6 +61,51 @@
 				MsgHandler::setError($e->getMessage());
 			}
 		}
+		//Responsavel por tratar todos os dados referente a alteração de informações do produto
+		function editarProduto($id, $nome, $descricao, $categoria, $valor, $quantidade, $promo){
+			try{
+				//Verifica se algum dos campos esta vazio, caso um deles esteja vazio, apresenta mensagem alertando
+				if(empty($nome) || empty($descricao) || empty($valor) || empty($quantidade))
+					throw new Exception("Por favor, preencha todos os campos corretamente");
+				
+				//Caso a variavel de promo não receba nenhum valor, a define como 0 para marcar que o produto não esta em promoção
+				if(empty($promo))
+					$promo = '0';
+				
+				//Verificação dos campos de acordo com o que é aceito pelo mysql
+				$_nome = $this->verificarCampo($nome);
+				$_descricao = $this->verificarCampo($descricao);
+				$_valor = $this->verificarCampo($valor);
+				$_quantidade = $this->verificarCampo($quantidade);
+				
+				//Consulta se existe algum produto com o mesmo nome do enviado, que seja diferente do produto que esta sendo editado no momento
+				$q = "SELECT * FROM produtos WHERE nome_produto='$_nome' AND id_produto!='$id'";
+				$r = $this->Dbc->query($q);
+				
+				//Caso retorne algum valor, alerta sobre duplicidade de nome
+				if(mysqli_num_rows($r) > 0)
+					throw new Exception("Já existe um produto com este nome.");
+				
+				//utiliza função para verificar validade da imagem enviada
+				$thumb = $this->verificarImagem($_FILES['imagem']['type'], $_FILES['imagem']['name'], $_FILES['imagem']['tmp_name']);
+				
+				//Caso a variavel $thumb retorne verdadeira, gera a variavel $q inserindo alteração de thumb, senão a variavel $q é gerada sem alteração de thumb
+				if($thumb):
+					$q = "UPDATE produtos SET nome_produto='$_nome', descricao='$_descricao', id_categoria='$categoria', valor='$_valor', estoque='$_quantidade', thumb='$thumb', promo='$promo' WHERE id_produto='$id'";
+				else:
+					$q = "UPDATE produtos SET nome_produto='$_nome', descricao='$_descricao', id_categoria='$categoria', valor='$_valor', estoque='$_quantidade', promo='$promo' WHERE id_produto='$id'";
+				endif;
+				
+				//Faz a consulta da query no banco de dados
+				$r = $this->Dbc->query($q);
+				
+				
+				header("Location: index.php?page=produtos");
+			}catch(Exception $e){
+				MsgHandler::setError($e->getMessage());
+			}
+		}
+
 		//Retorna todas informações de um produto especifico, de acordo com a id passada por parametro
 		function getProdutoPorId($id){
 			$q = "SELECT * FROM produtos WHERE id_produto='$id'";

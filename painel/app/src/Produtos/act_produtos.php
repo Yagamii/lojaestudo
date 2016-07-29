@@ -16,11 +16,15 @@
 	switch(action){
 		//Caso action seja adicionar, chama a função para adicionar produtos e passando as informações de $_POST como parametro da função
 		case 'adicionar':
-			$Produtos->addProduto($_POST['nome'], $_POST['descricao'], $_POST['categoria'], $_POST['valor'], $_POST['quantidade'], @$_POST['imagem']);
-			//header("Location: index.php?page=produtos");
+			$Produtos->addProduto($_POST['nome'], $_POST['descricao'], $_POST['categoria'], $_POST['valor'], $_POST['quantidade']);
+			header("Location: index.php?page=produtos");
 		break;
 		
 		case 'editar':
+			
+			if(isset($_POST['editarProduto']))
+				$Produtos->editarProduto($_GET['id'], $_POST['nome'], $_POST['descricao'], $_POST['categoria'], $_POST['valor'], $_POST['quantidade'], @$_POST['promo']);
+			
 		break;
 		
 		//Caso seja apagar, verifica se o form foi enviado, se sim ira chamar a função para deletar o produto do banco de dados
