@@ -41,7 +41,11 @@
 			</p>
 			<p>
 				<label style="margin-left: -340px">Promoção: </label>
+				<?php if($nomePorId['promo'] === 1): ?>
 				<input type="checkbox" name="promo" value="1" />
+				<?php else: ?>
+				<input type="checkbox" checked name="promo" value="1" />
+				<?php endif; ?>
 			</p>
 			<br/>
 			<p>
