@@ -1,5 +1,5 @@
 <h1 align="center">Promocoes</h1>
-<?php while($row = mysqli_fetch_array($promocoes, MYSQLI_ASSOC)): ?>
+<?php while(@$row = mysqli_fetch_array($promocoes, MYSQLI_ASSOC)): ?>
 
 	<div class="produto-curto">
     	<h3><a href="index.php?page=produto&id=<?php echo $row['id_produto']; ?>" ><?php echo $row['nome_produto']; ?></a></h3>
