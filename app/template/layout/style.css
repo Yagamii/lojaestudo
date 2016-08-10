@@ -52,6 +52,15 @@ body {
 	text-align:left;
 }
 
+.botaocarrinho{
+	margin-top: -30px;
+	margin-left: 105px;
+	border: 1px solid black;
+	width: 20px;
+	background-color: orange;
+	border-radius: 50px 50px 50px 50px;
+}
+
 /* navigation */
 #navigation {
 	background:#fafafa;
@@ -125,11 +134,6 @@ body {
 	border: 1px dashed #D85E00;
 }
 
-.desc-produto{
-	margin-top: -7px;
-	position: absolute;
-}
-
 .valor{
 	color:#00BC15;
 	position: absolute;
@@ -137,6 +141,10 @@ body {
 	padding-bottom: 20px;
 	float: left;
 	bottom: 0;
+}
+
+.desc-produto{
+	text-align: center;
 }
 
 .ver-produto{
@@ -259,39 +267,30 @@ td{
 	text-align: right;
 }
 
-#equipe{
-	border-bottom: 1px solid; 
-	padding-bottom: 15px;
-}
-
-#equipe img{
-	width: 170px;
-	height: 150px;
-	border: 1;
+.img-produto{
+	padding-left: 10px;
+	padding-top: 5px;
+	border-right: 1px solid grey;
+	width: 315px;
 	float: left;
-	padding-right: 10px;
-	padding-top: 8px;
+	margin-bottom: 15px
 }
 
-.comentarios{
-	border-bottom: 1px solid; 
-	padding-bottom: 15px ; 
-	margin-bottom: 10px;
+.info-produto{
+	padding-left: 10px;
+	float: left;
 }
 
-.comentarios div{
-	border-bottom: 1px dashed;  
-	border-bottom-color: #C63;
+.desc-produto-full{
+	padding-top: 15px;
+	clear: both;
+	border-top: 1px solid grey;
+	text-align: center;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid grey;
 }
 
-.comentarios div div{
-	border: 0;
-}
-
-.avaliar{
-	border-bottom: 1px dashed; 
-	padding-bottom: 5px;
-}
 
 /* footer */
 #footer {
