@@ -28,7 +28,7 @@
 										echo '<a href="painel/index.php?page=home">Admin</a>';
 									}
 									echo '
-									<a href="index.php?page=carrinho&id='.$_SESSION['id_usuario'].'">Carrinho</a>
+									<a href="index.php?page=carrinho">Carrinho <div  class="botaocarrinho">'.count(@$_SESSION['carrinho']).'</div></a> 
 									<a href="index.php?page=usuario&action=editar&id='.$_SESSION['id_usuario'].'">Editar dados</a>
 									<a href="index.php?page=login&action=logout">Logout</a>
 								</div>
