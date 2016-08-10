@@ -1,6 +1,6 @@
 <h1 align="center"><?php echo $dadosProduto['nome_produto'];?></h1>
 	<div class="img-produto">
-		<img src="app/template/Includes/thumb/<?php echo $dadosProduto['thumb'];?>" width="300px" height="400px"/>
+		<img src="app/template/Includes/thumb/<?php echo $dadosProduto['thumb'];?>" width="330px" height="400px"/>
 	</div>
 	
 	<div class="info-produto">
